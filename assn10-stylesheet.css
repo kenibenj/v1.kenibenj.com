@@ -1,0 +1,57 @@
+﻿/*Benjamin Keninger 
+ April 29, 2022
+ Assignment 10
+ Purpose: This is a web page for use as practice
+    in order to gain experience with jQuery and JSON.*/
+
+
+/*@import url(morestyles.css);*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #F80;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #888;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p {
+    padding: 2ex;
+}
+
+input {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+header, footer, section, div {
+    display: block;
+}
+
+div {
+    margin-top: 1em;
+    border: thin orange double;
+    overflow: hidden; /* This expands the section to surround the embedded items */
+}
+
+    div.containerDatadump {
+        float: left;
+        width: 48%;
+    }
+
+    div.containerOutput {
+        float: right;
+        width: 48%;
+    }	
+
+
