@@ -85,7 +85,10 @@
     <script>
         function sendEmail() {
             Email.send({
-                secureToken: "f8636c97-c8e2-4d08-8fd7-24080145fc78",
+/*                secureToken: "f8636c97-c8e2-4d08-8fd7-24080145fc78",*/
+                Host: "smtp.yourisp.com",
+                Username: "username",
+                Password: "password",
                 To: 'info@kenibenj.com',
                 From: document.getElementById("email").value,
                 Subject: "New Contact Form Enquiry",
@@ -94,7 +97,7 @@
                     + "<br> Phone #: " + document.getElementById("phone").value
                     + "<br> Message: " + document.getElementById("message").value
             }).then(
-                message => alert("Message Sent Successfully")
+                message => alert(message)
             );
         }
     </script>
