@@ -19,10 +19,31 @@
         <hr class="divider" />
         <br />
         <p>
-            Contact me, brotha!
+            Contact me, brotha! Please no pipebombs!
+            <hr style="margin-bottom:20px;" />
         </p>
-    </div>
+        <br />            <br />
 
+        <form onsubmit="sendEmail();">
+            <label for="name">Name <span>(required)</span></label>
+            <input type="text" id="name" placeholder="Your Full Name" required />
+            <br />            <br />
+
+            <label for="email">Email <span>(required)</span></label>
+            <input type="email" id="email" placeholder="Your Email Address" required />
+            <br />            <br />
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Your Phone Number" />
+            <br />            <br />
+
+            <label for="message">Message <span>(required)</span></label>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <br />            <br />
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     <footer>
         <div class="footer">
             <div class="inner-footer">
@@ -58,6 +79,24 @@
     </div>
     <script>
         $(window).on("load", function () { $(".loader").fadeOut("fast"); });
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                secureToken: "f8636c97-c8e2-4d08-8fd7-24080145fc78",
+                To: 'info@kenibenj.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Phone #: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("Message Sent Successfully")
+            );
+        }
     </script>
 </body>
 </html>
