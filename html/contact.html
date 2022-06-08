@@ -24,7 +24,7 @@
         </p>
         <br />            <br />
 
-        <form onsubmit="sendEmail(); " onclick="return false">
+        <form onsubmit="sendEmail(); reset(); return false;">
             <label for="name">Name <span>(required)</span></label>
             <input type="text" id="name" placeholder="Your Full Name" required />
             <br />            <br />
@@ -99,6 +99,7 @@
             }).then(
                 message => alert(message)
             );
+            console.log("Success!")
         }
     </script>
 </body>
