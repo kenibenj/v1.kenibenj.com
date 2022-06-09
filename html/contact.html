@@ -24,7 +24,7 @@
         </p>
         <br />            <br />
 
-        <form action="https://formsubmit.co/info@kenibenj.com" method="POST">
+        <form action="https://formsubmit.co/78cd743b9e91d1f1c3807256e6600a28" method="POST">
             <!--<label for="name">Name <span>(required)</span></label>
             <input type="text" id="name" name="name" placeholder="Your Full Name" required />
             <br />            <br />
@@ -82,22 +82,6 @@
     </div>
     <script>
         $(window).on("load", function () { $(".loader").fadeOut("fast"); });
-    </script>
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                SecureToken: "45b0b376-dc32-4a42-aed4-3e3739cea16e",
-                To: 'info@kenibenj.com',
-                From: document.getElementById("email").value,
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-            console.log("Success!")
-        }
     </script>
 </body>
 </html>
