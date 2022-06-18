@@ -52,13 +52,12 @@
         </form>
         <script>
             document.getElementById("form").onsubmit = function () {
-Swal.fire({
-  position: 'top-end',
-  icon: 'success',
-  title: 'Your work has been saved',
-  showConfirmButton: false,
-  timer: 1500
-});
+                Swal.fire({
+                    title: 'Message Sent!',
+                    text: 'I will try to get back to you as soon as I can.',
+                    confirmButtonText: 'OK',
+                    position: 'center'
+                });
             };
         </script>
     </div>
