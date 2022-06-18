@@ -10,6 +10,7 @@
             crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/ec99410cae.js" crossorigin="anonymous"></script>
+    <script src="sweetalert2.all.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
         </p>
         <br />            <br />
 
-        <form onsubmit="alert('I\'m flattered you\'re reaching out to me; I will respond as soon as I can!');" action="https://formsubmit.co/78cd743b9e91d1f1c3807256e6600a28" method="POST">
+        <form id="form" action="https://formsubmit.co/78cd743b9e91d1f1c3807256e6600a28" method="POST">
 
             <label for="name">Name <span>(required)</span></label>
             <input id="name" type="text" name="name" placeholder="John Smith" required />
@@ -40,7 +41,7 @@
             <br />            <br />
 
             <label for="message">Message <span>(required)</span></label>
-            <textarea id="message" rows="6" type="text" name="message" placeholder="Hello World!" required ></textarea>
+            <textarea id="message" rows="6" type="text" name="message" placeholder="Hello World!" required></textarea>
             <br />            <br />
 
             <input type="hidden" name="_subject" value="New Website Contact!">
@@ -49,6 +50,18 @@
             <input type="text" name="_honey" style="display:none">
             <button type="submit">Send</button>
         </form>
+        <script>
+            document.getElementById("form").onsubmit = function () {
+                alert("lol");
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Do you want to continue',
+                    icon: 'error',
+                    confirmButtonText: 'Cool'
+                })
+                alert("lol");
+            };
+        </script>
     </div>
     <footer>
         <div class="footer">
