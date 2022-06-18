@@ -56,8 +56,13 @@
 
 
 body {
-    background: linear-gradient(to right top, rgb(211,211,211), white 70%);
-    background-attachment: fixed; /*edit*/
+}
+
+.background {
+    background: linear-gradient(to right top, rgb(181,181,181), white 70%);
+    padding-top: 1px;
+    margin: 0;
+    border: 0;
 }
 
 body, html {
