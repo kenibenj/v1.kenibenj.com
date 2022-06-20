@@ -151,7 +151,7 @@ h2 {
 /*Horizontal Line Selector*/
 hr.divider {
     height: 3px;
-    background-color: rgb(15,15,15);
+    background-color: rgb(50,50,50);
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
     margin-left: 13em;

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="background">
+    <div id="background" class="background">
         <div class="text">
             <h1 class="blinker">contact</h1>
             <hr class="divider" />
@@ -56,7 +56,13 @@
                     title: 'Message Sent!',
                     text: 'I will try to get back to you as soon as I can.',
                     confirmButtonText: 'OK',
-                    position: 'center'
+                    position: 'center',
+                    color: '#323232',
+                    confirmButtonColor: '#323232',
+                    showConfirmButton: true,
+                    scrollbarPadding: 'false',
+                    target: document.getElementById('background'),
+                    toast: true
                 });
             };
         </script>
