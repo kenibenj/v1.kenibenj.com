@@ -53,10 +53,11 @@
         <script>
             document.getElementById("form").onsubmit = function () {
                 Swal.fire({
+                    backdrop: false,
+                    heightAuto: false,
                     title: 'Message Sent!',
                     text: 'I will try to get back to you as soon as I can.',
                     confirmButtonText: 'OK',
-                    position: 'center',
                     color: '#323232',
                     confirmButtonColor: '#323232',
                     showConfirmButton: true,
