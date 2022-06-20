@@ -159,6 +159,11 @@ hr.divider {
     border: none;
 }
 
+hr {
+    color: rgb(50,50,50);
+    background: rgb(50,50,50);
+}
+
 .text-ref{
     text-decoration: underline;
 }
