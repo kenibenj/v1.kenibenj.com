@@ -45,12 +45,20 @@
                 <br />            <br />
 
             <input type="hidden" name="_subject" value="New Website Contact!">
-            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_next" value="https://kenibenj.com/html/contact">
             <input type="text" name="_honey" style="display:none">
             <button type="submit">Send</button>
         </form>
         <script>
+            $(document).ready(function ($) {
+                $(document).on('submit', '#form', function (event) {
+                    event.preventDefault();
+
+                    alert('page did not reload');
+                });
+            });
+
             function sweetAlertFunction() {
                 Swal.fire({
                     backdrop: false,
