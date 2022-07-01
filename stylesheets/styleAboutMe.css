@@ -78,14 +78,11 @@ body, html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+html::-webkit-scrollbar {
     width: 0; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
 }
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: black;
-}
+
 
 div.text {
     text-align: left;
