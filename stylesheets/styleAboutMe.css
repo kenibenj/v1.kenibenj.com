@@ -58,6 +58,9 @@
 body {
 }
 
+html {
+}
+
 .background {
     background: linear-gradient(to right top, rgb(181,181,181), white 70%);
     padding-top: 1px;
@@ -72,6 +75,7 @@ body, html {
     width: 100%;
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -104,18 +108,42 @@ p {
 
 ul {
     text-align: center;
-    list-style: none;
+
     padding-left: 1em;
     padding-right: 1em;
 }
 
 li {
     display: inline-grid;
-    list-style: none;
+
 }
 
 li p {
     font-family: 'jetbrains_monothin';
+}
+
+.anchor li, .anchor a {
+    margin: 0;
+    line-height: 2.5em !important;
+    color: rgb(80,80,80);
+    display: list-item;
+    font-size: .9em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    list-style:none;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.anchor a {
+    list-style-type: '//     ';
+    transition: all .25s;
+}
+
+.anchor a:hover{
+    list-style-type: '///     ';
+    color: lightslategrey;
 }
 
 a {

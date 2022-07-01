@@ -10,6 +10,11 @@
             crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/ec99410cae.js" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('#1').scrollIntoView({
+            behavior: 'smooth'
+        });
+    </script>
 </head>
 
 <body>
@@ -23,9 +28,18 @@
                 the first real experience I had with coding was an intro to Python class I took in my senior year of high school - only about 3 years ago.
                 This has its drawbacks, of course, but it does give me the unique chance to document and display my journey from a near-beginner to a full-fledged software engineer.
                 While I obviously won't talk about every line of code I have ever written, I would like to show off some of the projects I have worked on, both academic and personal, as well as giving brief discussions of my thoughts during and after the development cycle.
-                <hr style="margin-bottom:20px;" />
             </p>
-            <br />
+            <p>
+                These links below will take you the section devoted to each respective project:
+            </p>
+            <ul class="anchor">
+                <li class="anchor"><a href="#1">War Card Game Simulator</a></li>
+                <li class="anchor"><a href="#2">Acquire Board Game</a></li>
+                <li class="anchor"><a href="#3">Essence Toolkit</a></li>
+                <li class="anchor"><a href="#4">Text Quest Adventure Game</a></li>
+                <li class="anchor"><a href="#5">Personal Website</a></li>
+            </ul>
+            <hr id="1" style="margin-bottom:50px;" />
             <h3 style=" text-decoration:underline; text-underline-offset: 10px;">War Card Game Simulator (Spring 2021)</h3>
             <h5 style="padding-left: 20px; color: rgb(80,80,80); line-height: 25px;">// A CLI program that could simulate a user-given amount of games of the card game War and provide various statistics about the set of games.</h5>
             <p>
@@ -40,8 +54,8 @@
             </p>
             <hr style="margin-bottom:20px;" />
 
-            <br />
-            <h3 style=" text-decoration:underline; text-underline-offset: 10px;">Acquire Board Game (Fall 2021)</h3>
+            <br id="2"/>
+            <h3  style=" text-decoration:underline; text-underline-offset: 10px;">Acquire Board Game (Fall 2021)</h3>
             <h5 style="padding-left: 20px; color: rgb(80,80,80); line-height: 25px;">// A recreation of the 6-player board game Acquire with a working Graphical User Interface (GUI).</h5>
             <p>
 
@@ -53,8 +67,8 @@
             </p>
             <hr style="margin-bottom:20px;" />
 
-            <br />
-            <h3 style=" text-decoration:underline; text-underline-offset: 10px;">Essence Toolset (Spring 2022)</h3>
+            <br id="3"/>
+            <h3  style=" text-decoration:underline; text-underline-offset: 10px;">Essence Toolkit (Spring 2022)</h3>
             <h5 style="padding-left: 20px; color: rgb(80,80,80); line-height: 25px;">// A digital library of Essentialized practices that will allow the user to view cards, Essence diagrams, and play Essence serious games.</h5>
             <p style="margin-bottom: 85px">
                 <img style="border: 4px solid black; border-color: black; border-radius: 10px; float: left; margin-bottom: 20px; margin-right: 20px;" alt="This is me, Benjamin!" src="../images/Capture.JPG" title="This is me, Benjamin. Hello!">
@@ -66,10 +80,12 @@
             </p>
             <hr style="margin-bottom:20px;" />
 
-            <br />
-            <h3 style=" text-decoration:underline; text-underline-offset: 10px;">Text Quest (Spring 2022)</h3>
-            <h5 style="padding-left: 20px; color: rgb(80,80,80); line-height: 25px;">// A text-based adventure game with a GUI that includes picture graphics and sound effects. 
-                The player can fight enemies to gain XP, level up to gain more health, and earn gold to buy items from a shop.</h5>
+            <br id="4"/>
+            <h3  style=" text-decoration:underline; text-underline-offset: 10px;">Text Quest Adventure Game(Spring 2022)</h3>
+            <h5 style="padding-left: 20px; color: rgb(80,80,80); line-height: 25px;">
+                // A text-based adventure game with a GUI that includes picture graphics and sound effects.
+                The player can fight enemies to gain XP, level up to gain more health, and earn gold to buy items from a shop.
+            </h5>
             <p style="margin-bottom: 85px">
                 <img style="border: 4px solid black; border-color: black; border-radius: 10px; float: left; margin-bottom: 20px; margin-right: 20px;" alt="This is me, Benjamin!" src="../images/Capture.JPG" title="This is me, Benjamin. Hello!">
                 Funnily enough, War was actually my favorite card game while growing up due to its incredibly simple yet engaging premise (for a child, at least).
@@ -80,15 +96,17 @@
             </p>
             <hr style="margin-bottom:20px;" />
 
-            <br />
-            <h3 style=" text-decoration:underline; text-underline-offset: 10px;">Personal Website (Summer 2022)</h3>
-            <h5 style="padding-left: 20px; color: rgb(80,80,80); line-height: 25px;">// A website primarily devoted to talking about and showcasing my interests.
-                Makes use of HTML, CSS, and Javascript (including the Jquery and SweetAlert2 libraries).</h5>
+            <br id="5"/>
+            <h3  style=" text-decoration:underline; text-underline-offset: 10px;">Personal Website (Summer 2022)</h3>
+            <h5 style="padding-left: 20px; color: rgb(80,80,80); line-height: 25px;">
+                // A website primarily devoted to talking about and showcasing my interests.
+                Makes use of HTML, CSS, and Javascript (including the Jquery and SweetAlert2 libraries).
+            </h5>
             <p>
                 For whatever reason, the Computer Science courseline contains ZERO courses dedicated to web development.
                 I realized it might be a problem if I graduated with a CS degree and still didn't understand HTML, so I took it upon myself to enroll in the few web development courses ISU does offer (all listed as Informatics classes).
                 Following my Spring 2022 semester, I knew the basics of front-end development but I still lacked practical experience in designing a website from scratch.
-                After seeing some friends of mine create on their own websites(<a class="text-ref" href="https://mcdelius.com/">mcdelius.com</a> &amp <a  class="text-ref" href="https://obeliskcollective.com/">obeliskcollective.com</a>), I was decided I would try to make one as well as a pet project to work on over the first half of Summer.
+                After seeing some friends of mine create on their own websites(<a class="text-ref" href="https://mcdelius.com/">mcdelius.com</a> &amp <a class="text-ref" href="https://obeliskcollective.com/">obeliskcollective.com</a>), I was decided I would try to make one as well as a pet project to work on over the first half of Summer.
             </p>
             <p>
                 As this site is mostly a series of static informative webpages, most of the 'code' is just HTML and CSS - though a little Javascript is used here and there.
