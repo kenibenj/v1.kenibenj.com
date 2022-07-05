@@ -2,25 +2,40 @@
 @font-face {
     font-family: 'jetbrains_monoregular';
     src: url('../fonts/jetbrainsmono-regular-webfont.eot');
-    src: url('../fonts/jetbrainsmono-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/jetbrainsmono-regular-webfont.woff2') format('woff2'), url('../fonts/jetbrainsmono-regular-webfont.woff') format('woff'), url('../fonts/jetbrainsmono-regular-webfont.ttf') format('truetype'), url('../fonts/jetbrainsmono-regular-webfont.svg#jetbrains_monoregular') format('svg');
+    src: url('../fonts/jetbrainsmono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jetbrainsmono-regular-webfont.woff2') format('woff2'),
+         url('../fonts/jetbrainsmono-regular-webfont.woff') format('woff'),
+         url('../fonts/jetbrainsmono-regular-webfont.ttf') format('truetype'),
+         url('../fonts/jetbrainsmono-regular-webfont.svg#jetbrains_monoregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
     font-family: 'jetbrains_monothin';
     src: url('../fonts/jetbrainsmono-thin-webfont.eot');
-    src: url('../fonts/jetbrainsmono-thin-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/jetbrainsmono-thin-webfont.woff2') format('woff2'), url('../fonts/jetbrainsmono-thin-webfont.woff') format('woff'), url('../fonts/jetbrainsmono-thin-webfont.ttf') format('truetype'), url('../fonts/jetbrainsmono-thin-webfont.svg#jetbrains_monothin') format('svg');
+    src: url('../fonts/jetbrainsmono-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jetbrainsmono-thin-webfont.woff2') format('woff2'),
+         url('../fonts/jetbrainsmono-thin-webfont.woff') format('woff'),
+         url('../fonts/jetbrainsmono-thin-webfont.ttf') format('truetype'),
+         url('../fonts/jetbrainsmono-thin-webfont.svg#jetbrains_monothin') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
     font-family: 'cascadia_coderegular';
     src: url('../fonts/cascadia-webfont.eot');
-    src: url('../fonts/cascadia-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cascadia-webfont.woff2') format('woff2'), url('../fonts/cascadia-webfont.woff') format('woff'), url('../fonts/cascadia-webfont.ttf') format('truetype'), url('../fonts/cascadia-webfont.svg#cascadia_coderegular') format('svg');
+    src: url('../fonts/cascadia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cascadia-webfont.woff2') format('woff2'),
+         url('../fonts/cascadia-webfont.woff') format('woff'),
+         url('../fonts/cascadia-webfont.ttf') format('truetype'),
+         url('../fonts/cascadia-webfont.svg#cascadia_coderegular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 .loader {
@@ -63,10 +78,10 @@ body, html {
     scroll-behavior: smooth;
 }
 
-    html::-webkit-scrollbar {
-        width: 0; /* Remove scrollbar space */
-        background: transparent; /* Optional: just make scrollbar invisible */
-    }
+html::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
 
 
 div.text {
@@ -86,21 +101,29 @@ p {
     line-height: 1.8em;
     font: arial;
     font-family: 'jetbrains_monoregular';
+/*    text-shadow: 1px 1px 1px black;*/
 }
 
 ul {
     text-align: center;
+
     padding-left: 1em;
     padding-right: 1em;
 }
 
 li {
     display: inline-grid;
+
 }
 
-    li p {
-        font-family: 'jetbrains_monothin';
-    }
+li p {
+    font-family: 'jetbrains_monothin';
+}
+
+.required {
+    font-weight: bold;
+    font-size: .8em;
+}
 
 .anchor li, .anchor a {
     margin: 0;
@@ -111,20 +134,21 @@ li {
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
-    list-style: none;
+    list-style:none;
     margin-left: 50px;
     text-align: left;
 }
 
 .anchor a {
-    list-style-type: '//     ';
+    list-style-type: '    //     ';
     transition: all .25s;
 }
 
-    .anchor a:hover {
-        list-style-type: '///     ';
-        color: lightslategrey;
-    }
+.anchor a:hover{
+    list-style-type: '->    //     ';
+    color: lightslategrey;
+    transition: all .25s;
+}
 
 a {
     text-decoration: none;
@@ -156,6 +180,11 @@ h2 {
     font-weight: normal;
 }
 
+/*Heading 3 Selector*/
+h3 {
+    line-height: 50px;
+}
+
 /*Horizontal Line Selector*/
 hr.divider {
     height: 3px;
@@ -172,14 +201,14 @@ hr {
     background: rgb(50,50,50);
 }
 
-.text-ref {
+.text-ref{
     text-decoration: underline;
 }
 
-.sig {
+.sig{
 }
 
-.images {
+.images{
     float: left;
     display: inline !important;
 }
@@ -196,7 +225,7 @@ hr {
     bottom: 0;
     width: 100%;
     height: 7em;
-    box-shadow: 0px -4px 4px 2px rgb(50,50,50);
+    box-shadow: 0px -4px 10px 2px rgb(50,50,50);
 }
 
 .inner-footer {
@@ -214,13 +243,13 @@ hr {
     justify-content: center;
 }
 
-    .social-links ul {
+.social-links ul {
         padding: 10px;
         display: flex;
         width: 400px;
         height: 30px;
         margin: auto;
-    }
+}
 
 .social-items a {
     padding: 0px 15px 0px 15px;
@@ -229,9 +258,9 @@ hr {
     transition: all .25s;
 }
 
-    .social-items a:hover {
+.social-items a:hover {
         color: lightslategrey;
-    }
+}
 
 .quick-links {
     display: flex;
@@ -242,12 +271,12 @@ hr {
     justify-content: center;
 }
 
-    .quick-links ul {
+.quick-links ul {
         padding: 0px;
         display: flex;
         height: 30px;
         margin: auto;
-    }
+}
 
 .quick-items a:hover {
     color: slategrey;
@@ -268,6 +297,7 @@ hr {
 .quick-items-current a {
     color: white;
     text-decoration: overline;
+    
     padding: 0px 15px 0px 15px;
     text-align: center;
     font-size: 18px;
@@ -318,151 +348,138 @@ hr {
     border-radius: 10px;
 }
 
-    #slider figure {
-        position: relative;
-        width: 500%;
-        margin: 0;
-        left: 0;
-        animation: 40s slider ease infinite;
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 40s slider ease infinite;
+}
+
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider{
+    0%{
+        left:0;
     }
-
-        #slider figure img {
-            width: 20%;
-            float: left;
-        }
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-
     8.33% {
         left: 0;
     }
-
     12.49% {
         left: -100%;
     }
-
     20.82% {
         left: -100%;
     }
-
-    25% {
+    25%{
         left: -200%;
     }
-
     33.33% {
         left: -200%;
     }
-
     37.49% {
         left: -300%;
     }
-
     45.82% {
         left: -300%;
     }
-
     50% {
         left: -400%;
     }
-
-    58.33% {
-        left: -400%;
+    58.33%{
+        left:-400%;
     }
-
     62.49% {
         left: -300%;
     }
-
     70.82% {
         left: -300%;
     }
-
     75% {
         left: -200%;
     }
-
     83.31% {
         left: -200%;
     }
-
     87.47% {
         left: -100%;
     }
-
     95.8% {
         left: -100%;
     }
-
-    100% {
+    100%{
         left: 0;
     }
 }
 
-form {
+form{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
 
-    form input {
-        border: none;
-        margin: 10px 0;
-        padding: 20px;
-        outline: solid;
-        outline-width: 2px;
-        background-color: #f5f5f5;
-        font-size: 18px;
-        border-radius: 3px;
-        width: 50%;
-        max-width: 50%;
-    }
+form input{
+    border: none;
+    margin: 10px 0;
+    padding: 20px;
+    outline: solid;
+    outline-width: 2px;
+    background-color: #f5f5f5;
+    font-size: 18px;
+    border-radius: 3px;
+    width: 50%;
+    max-width: 50%;
+}
+form textarea{
+    font: arial;
+    border: none;
+    margin: 10px 0;
+    padding: 20px;
+    outline: solid;
+    outline-width: 2px;
+    background-color: #f5f5f5;
+    font-size: 18px;
+    border-radius: 3px;
+}
 
-    form textarea {
-        font: arial;
-        border: none;
-        margin: 10px 0;
-        padding: 20px;
-        outline: solid;
-        outline-width: 2px;
-        background-color: #f5f5f5;
-        font-size: 18px;
-        border-radius: 3px;
-    }
+form button{
+    padding: 15px;
+    background-color: rgb(15,15,15);
+    color: white;
+    font-size: 18px;
+    border: 1px;
+    border-radius: 3px;
+    width: 150px;
+    margin: 20px auto 0;
+    transition: all .20s;
+}
 
-    form button {
-        padding: 15px;
-        background-color: rgb(15,15,15);
-        color: white;
-        font-size: 18px;
-        border: 1px;
-        border-radius: 3px;
-        width: 150px;
-        margin: 20px auto 0;
-        transition: all .20s;
-    }
-
-        form button:hover {
-            filter: drop-shadow(0 0 .1em black);
-            opacity: 90%;
-        }
+form button:hover{
+    filter: drop-shadow(0 0  .1em black);
+    opacity: 90%;
+}
 
 .iframe-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
+    overflow: hidden;
+    border: 5px solid black;
+    border-color: black;
+    border-radius: 10px;
+    background: black;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow:hidden;
 }
 
-    .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 5px solid black;
-        border-color: black;
-        border-radius: 10px;
-    }
