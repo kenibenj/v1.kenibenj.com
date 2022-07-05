@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\downloadables",
     "\\html",
     "\\images",
     "\\stylesheets"
   ],
-  "SelectedNode": "\\html\\code.html",
+  "SelectedNode": "\\fonts",
   "PreviewInSolutionExplorer": false
 }
