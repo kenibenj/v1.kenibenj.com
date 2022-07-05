@@ -2,40 +2,25 @@
 @font-face {
     font-family: 'jetbrains_monoregular';
     src: url('../fonts/jetbrainsmono-regular-webfont.eot');
-    src: url('../fonts/jetbrainsmono-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/jetbrainsmono-regular-webfont.woff2') format('woff2'),
-         url('../fonts/jetbrainsmono-regular-webfont.woff') format('woff'),
-         url('../fonts/jetbrainsmono-regular-webfont.ttf') format('truetype'),
-         url('../fonts/jetbrainsmono-regular-webfont.svg#jetbrains_monoregular') format('svg');
+    src: url('../fonts/jetbrainsmono-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/jetbrainsmono-regular-webfont.woff2') format('woff2'), url('../fonts/jetbrainsmono-regular-webfont.woff') format('woff'), url('../fonts/jetbrainsmono-regular-webfont.ttf') format('truetype'), url('../fonts/jetbrainsmono-regular-webfont.svg#jetbrains_monoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'jetbrains_monothin';
     src: url('../fonts/jetbrainsmono-thin-webfont.eot');
-    src: url('../fonts/jetbrainsmono-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/jetbrainsmono-thin-webfont.woff2') format('woff2'),
-         url('../fonts/jetbrainsmono-thin-webfont.woff') format('woff'),
-         url('../fonts/jetbrainsmono-thin-webfont.ttf') format('truetype'),
-         url('../fonts/jetbrainsmono-thin-webfont.svg#jetbrains_monothin') format('svg');
+    src: url('../fonts/jetbrainsmono-thin-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/jetbrainsmono-thin-webfont.woff2') format('woff2'), url('../fonts/jetbrainsmono-thin-webfont.woff') format('woff'), url('../fonts/jetbrainsmono-thin-webfont.ttf') format('truetype'), url('../fonts/jetbrainsmono-thin-webfont.svg#jetbrains_monothin') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'cascadia_coderegular';
     src: url('../fonts/cascadia-webfont.eot');
-    src: url('../fonts/cascadia-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/cascadia-webfont.woff2') format('woff2'),
-         url('../fonts/cascadia-webfont.woff') format('woff'),
-         url('../fonts/cascadia-webfont.ttf') format('truetype'),
-         url('../fonts/cascadia-webfont.svg#cascadia_coderegular') format('svg');
+    src: url('../fonts/cascadia-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/cascadia-webfont.woff2') format('woff2'), url('../fonts/cascadia-webfont.woff') format('woff'), url('../fonts/cascadia-webfont.ttf') format('truetype'), url('../fonts/cascadia-webfont.svg#cascadia_coderegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .loader {
@@ -111,23 +96,23 @@ ul li a.main {
     transition: ease-out .2s;
 }
 
-ul li a.main::after{
-    content: "_";
-    opacity: 0%;
-}
-
-ul li a.main:hover {
-    filter: drop-shadow(0 0  .7em black);
-    opacity: 60%;
-    font-size: 3.8em;
-}
-
-
-    ul li a.main:hover::after {
-        display: inline-block;
-        opacity: 100%;
-        animation: blink 1s infinite;
+    ul li a.main::after {
+        content: "_";
+        opacity: 0%;
     }
+
+    ul li a.main:hover {
+        filter: drop-shadow(0 0 .7em black);
+        opacity: 60%;
+        font-size: 3.8em;
+    }
+
+
+        ul li a.main:hover::after {
+            display: inline-block;
+            opacity: 100%;
+            animation: blink 1s infinite;
+        }
 
 a {
     text-decoration: none;
@@ -193,24 +178,24 @@ hr.divider {
     justify-content: center;
 }
 
-.social-links ul{
-    padding: 10px;
-    display: flex;
-    width: 400px;
-    height: 30px;
-    margin: auto;
-}
+    .social-links ul {
+        padding: 10px;
+        display: flex;
+        width: 400px;
+        height: 30px;
+        margin: auto;
+    }
 
-.social-items a{
+.social-items a {
     padding: 0px 15px 0px 15px;
     font-size: 45px;
     color: white;
     transition: all .25s;
 }
 
-.social-items a:hover{
-    color: lightslategrey;
-}
+    .social-items a:hover {
+        color: lightslategrey;
+    }
 
 .quick-links {
     display: flex;
@@ -218,15 +203,15 @@ hr.divider {
     height: 60px;
     margin: 0 auto;
     align-items: center;
-    justify-content:center;
-} 
-
-.quick-links ul{
-    padding: 0px;
-    display: flex;
-    height: 30px;
-    margin: auto;
+    justify-content: center;
 }
+
+    .quick-links ul {
+        padding: 0px;
+        display: flex;
+        height: 30px;
+        margin: auto;
+    }
 
 .quick-items a:hover {
     color: slategrey;
@@ -284,4 +269,3 @@ hr.divider {
         opacity: 1;
     }
 }
-
