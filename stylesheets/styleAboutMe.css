@@ -415,6 +415,47 @@ hr {
     }
 }
 
+@keyframes sliderTwo{
+    0%{
+        left:0;
+    }
+    11.11% {
+        left: 0;
+    }
+    16.66% {
+        left: -100%;
+    }
+    27.77% {
+        left: -100%;
+    }
+    33.27%{
+        left: -200%;
+    }
+    44.38% {
+        left: -200%;
+    }
+    50% {
+        left: -300%;
+    }
+    61.11% {
+        left: -300%;
+    }
+    66.66% {
+        left: -200%;
+    }
+    77.77%{
+        left:-200%;
+    }
+    83.32% {
+        left: -100%;
+    }
+    94.43% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+}
+
 form{
     display: flex;
     flex-direction: column;
