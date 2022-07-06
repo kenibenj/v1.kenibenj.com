@@ -348,12 +348,19 @@ hr {
     border-radius: 10px;
 }
 
-#slider figure{
+#slider figure {
     position: relative;
     width: 500%;
     margin: 0;
     left: 0;
+}
+
+#slider .fivePic {
     animation: 40s slider ease infinite;
+}
+
+#slider .fourPic {
+    animation: 40s sliderTwo ease infinite;
 }
 
 #slider figure img{
