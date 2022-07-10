@@ -100,7 +100,7 @@ div.text {
 p {
     line-height: 1.8em;
     font: arial;
-    font-family: 'jetbrains_monoregular';
+    font-family: Consolas;
 /*    text-shadow: 1px 1px 1px black;*/
 }
 
@@ -125,7 +125,7 @@ li p {
     font-size: .8em;
 }
 
-.anchor li, .anchor a {
+.anchor li, .anchor a{
     margin: 0;
     line-height: 2.5em !important;
     color: rgb(80,80,80);
@@ -134,12 +134,39 @@ li p {
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
-    list-style:none;
+    list-style: none;
     margin-left: 50px;
     text-align: left;
+    transition: all .25s;
 }
 
-.anchor a {
+.post li, .post a {
+    margin: 0;
+    line-height: 2.5em !important;
+    color: rgb(80,80,80);
+    display: list-item;
+    font-size: .9em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    list-style: none;
+    margin-left: 20px;
+    text-align: left;
+    transition: all .25s;
+}
+
+.post a {
+    list-style-type: '';
+    transition: all .25s;
+}
+
+.post a:hover {
+    list-style-type: '->  ';
+    color: lightslategrey;
+    transition: all .25s;
+}
+
+.anchor a{
     list-style-type: '    //     ';
     transition: all .25s;
 }
@@ -149,6 +176,23 @@ li p {
     color: lightslategrey;
     transition: all .25s;
 }
+
+.comment span {
+    margin: 0;
+    line-height: 25px !important;
+    color: rgb(80,80,80);
+    display: list-item;
+    font-size: .83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    list-style: none;
+    margin-left: 50px;
+    text-align: left;
+    list-style-type: '//   ';
+    transition: all .25s;
+}
+
 
 a {
     text-decoration: none;
