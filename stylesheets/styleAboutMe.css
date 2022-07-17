@@ -267,7 +267,7 @@ hr {
 }
 
 .images{
-    float: left;
+    float: right;
     display: inline !important;
 }
 
@@ -398,7 +398,7 @@ hr {
     display: block;
     overflow: hidden;
     width: 330px;
-    float: left;
+    float: right;
     margin-right: 20px;
     position: relative;
     border: 4px solid black;
