@@ -91,7 +91,7 @@ li {
 ul li a.main {
     position: relative;
     color: rgb(15,15,15);
-    font-size: 3.5em;
+    font-size: 3vw;
     transform: scale(.6, 1);
     transition: ease-out .2s;
 }

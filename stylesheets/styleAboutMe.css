@@ -116,6 +116,7 @@ p {
     font: arial;
     font-family: 'veramono';
 /*    text-shadow: 1px 1px 1px black;*/
+    margin-bottom: 2.5vh;
 }
 
 ul {
@@ -196,10 +197,10 @@ li p {
     line-height: 25px !important;
     color: rgb(80,80,80);
     display: list-item;
-    font-size: 1.5vh;
+    font-size: .9em;
     margin-left: 0;
     margin-right: 0;
-    line-height:20pt;
+    line-height: 20pt;
     font-weight: bold;
     list-style: none;
     margin-left: 50px;
@@ -242,6 +243,7 @@ h2 {
 /*Heading 3 Selector*/
 h3 {
     line-height: 50px;
+    font-size: 23px;
 }
 
 /*Horizontal Line Selector*/
@@ -611,4 +613,3 @@ form button:hover{
   border-radius: 10px;
   overflow:hidden;
 }
-
