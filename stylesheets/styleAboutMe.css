@@ -196,9 +196,10 @@ li p {
     line-height: 25px !important;
     color: rgb(80,80,80);
     display: list-item;
-    font-size: .83em;
+    font-size: 1.5vh;
     margin-left: 0;
     margin-right: 0;
+    line-height:20pt;
     font-weight: bold;
     list-style: none;
     margin-left: 50px;
