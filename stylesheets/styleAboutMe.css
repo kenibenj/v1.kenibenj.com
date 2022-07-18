@@ -267,6 +267,11 @@ hr {
 }
 
 .images{
+    float: left;
+    display: inline !important;
+}
+
+.images2 {
     float: right;
     display: inline !important;
 }
