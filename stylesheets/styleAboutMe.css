@@ -170,6 +170,38 @@ li p {
     transition: all .25s;
 }
 
+.p {
+    margin: 0;
+    line-height: 2.5em !important;
+    color: rgb(80,80,80);
+    display: list-item;
+    font-size: .85em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    transition: all .25s;
+}
+
+.p a {
+    color: rgb(80,80,80);
+    transition: all .25s;
+    text-align: center;
+}
+
+    .p a:hover {
+        color: lightslategrey;
+        transition: all .25s;
+        text-align: center;
+        font-size: .9em;
+    }
+
+.p p{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
 .post a {
     list-style-type: '';
     transition: all .25s;
@@ -179,6 +211,13 @@ li p {
     list-style-type: '->  ';
     color: lightslategrey;
     transition: all .25s;
+}
+
+.friends {
+    background: rgba(0, 0, 0, .15);
+    border: 4px solid black;
+    border-color: black;
+    border-radius: 10px;
 }
 
 .anchor a{
