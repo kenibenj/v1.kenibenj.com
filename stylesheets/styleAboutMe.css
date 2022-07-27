@@ -464,6 +464,17 @@ hr {
     border-radius: 10px;
 }
 
+#slider3 {
+    display: block;
+    overflow: hidden;
+    width: 450px;
+    margin-right: 20px;
+    position: relative;
+    border: 4px solid black;
+    border-color: black;
+    border-radius: 10px;
+}
+
 #slider figure, #slider2 figure {
     position: relative;
     width: 500%;
@@ -471,7 +482,7 @@ hr {
     left: 0;
 }
 
-#slider .fivePic, #slider2 .fivePic {
+#slider .fivePic, #slider2 .fivePic, #{
     animation: 40s slider ease infinite;
 }
 
@@ -580,6 +591,28 @@ hr {
     94.43% {
         left: -100%;
     }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes sliderThree {
+    0% {
+        left: 0;
+    }
+
+    33.33% {
+        left: 0;
+    }
+
+    50% {
+        left: -100%;
+    }
+
+    83.33% {
+        left: -100%;
+    }
+
     100% {
         left: 0%;
     }
