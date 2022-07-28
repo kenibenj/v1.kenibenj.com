@@ -318,6 +318,10 @@ hr {
     display: inline !important;
 }
 
+.images3 {
+    display: inline !important;
+}
+
 .buttons {
     display: inline;
     justify-content: center;
@@ -467,27 +471,48 @@ hr {
 #slider3 {
     display: block;
     overflow: hidden;
+    width: 100%;
+    margin-right: 20px;
+    position: relative;
+    border: 4px solid black;
+    border-color: black;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+}
+
+#slider4 {
+    display: block;
+    overflow: hidden;
     width: 450px;
     margin-right: 20px;
     position: relative;
     border: 4px solid black;
     border-color: black;
     border-radius: 10px;
+    margin-bottom: 3vh;
 }
 
-#slider figure, #slider2 figure {
+#slider figure, #slider2 figure, #slider3 figure, #slider4 figure {
     position: relative;
     width: 500%;
     margin: 0;
     left: 0;
 }
 
-#slider .fivePic, #slider2 .fivePic, #{
+#slider .fivePic, #slider2 .fivePic{
     animation: 40s slider ease infinite;
 }
 
 #slider .fourPic, #slider2 .fourPic {
     animation: 40s sliderTwo ease infinite;
+}
+
+#slider3 .twoPic{
+    animation: 10s sliderThree ease infinite;
+}
+
+#slider4 .twoPic {
+    animation: 8s sliderThree ease infinite;
 }
 
 #slider figure img{
@@ -498,6 +523,15 @@ hr {
 #slider2 figure img {
     width: 20%;
     float: left;
+}
+
+#slider3 figure img {
+    width: 20%;
+    float: left;
+}
+
+#slider4 figure img {
+    width: 20%;
 }
 
 @keyframes slider{
