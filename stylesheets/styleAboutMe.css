@@ -319,7 +319,6 @@ hr {
 }
 
 .images3 {
-    display: inline !important;
 }
 
 .buttons {
@@ -499,15 +498,15 @@ hr {
     left: 0;
 }
 
-#slider .fivePic, #slider2 .fivePic{
+#slider .fivePic, #slider2 .fivePic {
     animation: 40s slider ease infinite;
 }
 
-#slider .fourPic, #slider2 .fourPic {
+#slider .fourPic, #slider2 .fourPic, #slider3 .fourPic {
     animation: 40s sliderTwo ease infinite;
 }
 
-#slider3 .twoPic{
+#slider3 .twoPic {
     animation: 10s sliderThree ease infinite;
 }
 
@@ -532,6 +531,7 @@ hr {
 
 #slider4 figure img {
     width: 20%;
+    float: left;
 }
 
 @keyframes slider{
