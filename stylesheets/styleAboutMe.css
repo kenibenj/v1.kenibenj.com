@@ -334,6 +334,7 @@ hr {
     width: 100%;
     height: 7em;
     box-shadow: 0px -4px 10px 2px rgb(50,50,50);
+    background: black;
 }
 
 .inner-footer {
@@ -352,7 +353,7 @@ hr {
 }
 
 .social-links ul {
-        padding: 10px;
+        padding: 1vh;
         display: flex;
         width: 400px;
         height: 30px;
@@ -374,9 +375,6 @@ hr {
     display: flex;
     width: 100vw;
     height: 60px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
 }
 
 .quick-links ul {
