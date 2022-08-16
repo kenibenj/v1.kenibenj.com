@@ -717,3 +717,28 @@ form button:hover{
   border-radius: 10px;
   overflow:hidden;
 }
+
+.star-filled {
+    color: #f89f1f;
+    filter: drop-shadow(0 .05em .05em black);
+}
+
+.stars {
+    text-align: center;
+    font-size: 25px;
+}
+
+.bookPicRateDiv {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+
+.bookPic {
+    border: 4px solid black; 
+    border-color: black; 
+    border-radius: 10px; 
+    float: left; 
+    margin-bottom: 10px; 
+    width: 100%;
+}
