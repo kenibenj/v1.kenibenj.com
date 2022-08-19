@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\html",
+    "\\html\\blogPosts",
+    "\\images",
+    "\\stylesheets"
   ],
-  "SelectedNode": "\\C:\\Users\\bsken\\Documents\\New folder",
+  "SelectedNode": "\\images\\mongols.jpg",
   "PreviewInSolutionExplorer": false
 }
