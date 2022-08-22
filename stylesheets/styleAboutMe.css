@@ -741,10 +741,15 @@ form button:hover{
 }
 
 .bookPic {
-    border: 4px solid black; 
-    border-color: black; 
-    border-radius: 10px; 
-    float: left; 
-    margin-bottom: 10px; 
+    border: 4px solid black;
+    border-color: black;
+    border-radius: 10px;
+    float: left;
+    margin-bottom: 10px;
     width: 100%;
+    background: black;
+}
+
+.bookPicDiv {
+    background: black;
 }
