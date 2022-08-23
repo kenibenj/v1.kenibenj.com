@@ -171,6 +171,10 @@ li p {
     transition: all .25s;
 }
 
+.unfinished{
+    opacity: 50%;
+}
+
 .p {
     margin: 0;
     line-height: 2.5em !important;
