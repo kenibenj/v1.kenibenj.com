@@ -308,6 +308,8 @@ hr {
 
 .text-ref{
     text-decoration: underline;
+    font-weight: 600;
+    color: black;
 }
 
 .sig{
