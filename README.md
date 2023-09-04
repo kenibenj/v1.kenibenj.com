@@ -1,1 +1,1 @@
-
+First version of my personal website. Coded in mostly vanilla HTML, CSS, and Javascript during the Summer of 2022 as a personal project. Can be viewed [here](https://v1.kenibenj.com). You can find the codebase for my newer (and current) iteration of my personal website [here]([https://www.codecademy.com/pages/contribute-docs](https://github.com/kenibenj/kenibenj.github.io)https://github.com/kenibenj/kenibenj.github.io).
